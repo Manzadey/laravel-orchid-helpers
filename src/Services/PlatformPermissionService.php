@@ -39,7 +39,7 @@ class PlatformPermissionService
         $policy        = 'App\Policies\\' . $classBaseName . 'Policy';
 
         if(!class_exists($policy)) {
-            throw new RuntimeException("Policy $policy not found!");
+            return $permissions;
         }
 
         $methods = collect(get_class_methods($policy))
