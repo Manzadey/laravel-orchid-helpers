@@ -1,6 +1,6 @@
 {
   "name": "manzadey/laravel-orchid-helpers",
-  "type": "library",
+  "type": "package",
   "license": "MIT",
   "authors": [
     {
