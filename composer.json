@@ -34,7 +34,8 @@
   "extra": {
     "laravel": {
       "providers": [
-        "Manzadey\\LaravelOrchidHelpers\\Providers\\FoundationServiceProvider"
+        "Manzadey\\LaravelOrchidHelpers\\Providers\\FoundationServiceProvider",
+        "Manzadey\\LaravelOrchidHelpers\\Providers\\MacrosServiceProvider"
       ]
     }
   }
