@@ -12,7 +12,7 @@ class PrintSight
     public static function make(string $name, string $title = null) : \Orchid\Screen\Sight
     {
         return Sight::make($name, $title)
-            ->render(static fn(Model|Repository $target) : string => view('orchid-helpers::platform.sight.print', [
+            ->render(static fn(Model|Repository $target) : string => view('orchid-helpers::platform.print', [
                 'value' => print_r(data_get($target, $name), true),
             ])->render());
     }
