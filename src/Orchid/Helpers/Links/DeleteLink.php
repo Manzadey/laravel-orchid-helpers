@@ -25,6 +25,6 @@ class DeleteLink
             'morph' => $model->getMorphClass(),
             'id'    => $model->getAttribute('id'),
             ...$attributes,
-        ]);
+        ])->can('delete', $model);
     }
 }
