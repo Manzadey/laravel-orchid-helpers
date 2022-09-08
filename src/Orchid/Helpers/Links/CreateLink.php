@@ -15,9 +15,10 @@ class CreateLink
             ->when($route !== null, static fn(Link $link) : Link => $link->route($route));
     }
 
-    public static function makeFromModel(string $model, string $route) : Link
+    public static function route(string $name, $parameters = []) : Link
     {
         return self::make()
-            ->route($route);
+            ->route($name, $parameters)
+            ->can('create', $parameters);
     }
 }

@@ -15,9 +15,10 @@ class EditLink
             ->icon('wrench');
     }
 
-    public static function makeFromModel(Model $model, string $route) : Link
+    public static function route(string $name, $parameters = []) : Link
     {
         return self::make()
-            ->route($route, $model);
+            ->route($name, $parameters)
+            ->can('show', $parameters);
     }
 }
