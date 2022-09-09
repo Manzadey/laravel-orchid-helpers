@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 namespace Manzadey\LaravelOrchidHelpers\Orchid\Helpers\Alerts;
 
-use Orchid\Alert\Alert;
+use Orchid\Support\Facades\Alert;
 
 class SaveAlert
 {
