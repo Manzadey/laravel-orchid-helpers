@@ -5,11 +5,14 @@ declare(strict_types=1);
 namespace Manzadey\LaravelOrchidHelpers\Orchid\Helpers\Screens;
 
 use Illuminate\Database\Eloquent\Model;
+use Manzadey\LaravelOrchidHelpers\Orchid\Traits\DeleteActionTrait;
 use Orchid\Screen\Screen as BaseScreen;
 use Tabuna\Breadcrumbs\Breadcrumbs;
 
 abstract class AbstractScreen extends BaseScreen
 {
+    use DeleteActionTrait;
+
     /**
      * @throws \Throwable
      */
