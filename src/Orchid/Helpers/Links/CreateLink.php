@@ -18,7 +18,6 @@ class CreateLink
     public static function route(string $name, $parameters = []) : Link
     {
         return self::make()
-            ->route($name, $parameters)
-            ->can('create', $parameters);
+            ->route($name, $parameters);
     }
 }
