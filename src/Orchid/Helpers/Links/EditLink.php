@@ -19,6 +19,6 @@ class EditLink
     {
         return self::make()
             ->route($name, $parameters)
-            ->can('show', $parameters);
+            ->can('edit', $parameters);
     }
 }
