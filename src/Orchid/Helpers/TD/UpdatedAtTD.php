@@ -6,7 +6,7 @@ namespace Manzadey\LaravelOrchidHelpers\Orchid\Helpers\TD;
 
 use Orchid\Screen\TD;
 
-class UpdateAtTD
+class UpdatedAtTD
 {
     public static function make() : TD
     {
