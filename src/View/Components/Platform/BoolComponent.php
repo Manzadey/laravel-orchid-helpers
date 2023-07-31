@@ -28,7 +28,7 @@ class BoolComponent extends Component
 
     public function icon() : string
     {
-        return $this->bool ? 'like' : 'dislike';
+        return $this->bool ? 'bs.check' : 'bs.x';
     }
 
     /**
