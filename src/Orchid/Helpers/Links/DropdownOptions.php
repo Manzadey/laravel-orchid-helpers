@@ -10,6 +10,6 @@ class DropdownOptions
 {
     public static function make() : DropDown
     {
-        return DropDown::make()->icon('options-vertical');
+        return DropDown::make()->icon('bs.three-dots-vertical');
     }
 }
