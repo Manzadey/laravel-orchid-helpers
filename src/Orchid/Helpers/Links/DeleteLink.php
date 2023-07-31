@@ -16,7 +16,7 @@ class DeleteLink
             ->type(Color::DANGER())
             ->confirm('Вы действительно хотите удалить текущую запись?')
             ->method($method, $attributes)
-            ->icon('trash');
+            ->icon('bs.trash2');
     }
 
     public static function makeFromModel(Model $model, array $attributes = []) : Button

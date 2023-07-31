@@ -11,6 +11,6 @@ class DropdownRelations
     public static function make() : DropDown
     {
         return DropDown::make(__('Связи'))
-            ->icon('share');
+            ->icon('bs.share');
     }
 }

@@ -9,7 +9,7 @@ use Orchid\Support\Color;
 
 class SaveButton
 {
-    public static function make(string $icon = 'save', string $method = 'save') : Button
+    public static function make(string $icon = 'bs.check-circle', string $method = 'save') : Button
     {
         return Button::make(__('Сохранить'))
             ->icon($icon)

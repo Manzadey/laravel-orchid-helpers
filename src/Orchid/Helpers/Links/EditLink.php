@@ -12,7 +12,7 @@ class EditLink
     public static function make() : Link
     {
         return Link::make(__('Редактировать'))
-            ->icon('wrench');
+            ->icon('bs.wrench');
     }
 
     public static function route(string $name, $parameters = []) : Link

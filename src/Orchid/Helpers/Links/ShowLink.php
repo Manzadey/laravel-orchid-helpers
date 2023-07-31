@@ -12,7 +12,7 @@ class ShowLink
     public static function make() : Link
     {
         return Link::make(__('Подробнее'))
-            ->icon('eye');
+            ->icon('bs.eye');
     }
 
     public static function route(string $name, $parameters = []) : Link

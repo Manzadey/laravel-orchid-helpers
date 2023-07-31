@@ -11,7 +11,7 @@ class CreateLink
     public static function make(string $route = null) : Link
     {
         return Link::make(__('Добавить'))
-            ->icon('plus')
+            ->icon('bs.plus')
             ->when($route !== null, static fn(Link $link) : Link => $link->route($route));
     }
 
