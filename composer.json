@@ -13,7 +13,7 @@
   "require": {
     "php": "^8.1",
     "ext-json": "*",
-    "orchid/platform": "^13.1"
+    "orchid/platform": "^13.0|^14.0"
   },
   "require-dev": {
     "roave/security-advisories": "dev-latest"

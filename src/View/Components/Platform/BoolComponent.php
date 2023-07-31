@@ -18,7 +18,7 @@ class BoolComponent extends Component
         readonly public string           $name,
     )
     {
-        $this->bool = data_get($this->target, $this->name);
+        $this->bool = (bool) data_get($this->target, $this->name);
     }
 
     public function color() : string

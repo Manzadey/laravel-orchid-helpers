@@ -15,6 +15,10 @@ class TimestampTD
     {
         return TD::make($name, $title)
             ->sort()
-            ->render(static fn(Repository|Model $target) => ($item = data_get($target, $name)) instanceof Carbon ? $item->isoFormat('LLLL') : $item);
+            ->render(
+                static fn(Repository|Model $target) => ($item = data_get($target, $name)) instanceof Carbon ?
+                    $item->isoFormat('LLLL') :
+                    $item
+            );
     }
 }

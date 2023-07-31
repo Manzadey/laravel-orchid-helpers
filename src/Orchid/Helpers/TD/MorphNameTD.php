@@ -12,6 +12,8 @@ class MorphNameTD
     public static function make(string $name) : TD
     {
         return TD::make($name, __('Тип объекта'))
-            ->render(static fn(Model $model) => __(class_basename($model->{$name})));
+            ->render(
+                static fn(Model $model) => __(class_basename($model->{$name}))
+            );
     }
 }

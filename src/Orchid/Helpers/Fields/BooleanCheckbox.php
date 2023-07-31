@@ -6,12 +6,12 @@ namespace Manzadey\LaravelOrchidHelpers\Orchid\Helpers\Fields;
 
 use Orchid\Screen\Fields\CheckBox;
 
-class IsActiveCheckbox
+class BooleanCheckbox
 {
-    public static function make() : CheckBox
+    public static function make(string $name) : CheckBox
     {
-        return CheckBox::make('model.is_active')
-            ->title(attrName('is_active'))
+        return CheckBox::make("model.$name")
+            ->title(attrName($name))
             ->sendTrueOrFalse();
     }
 }

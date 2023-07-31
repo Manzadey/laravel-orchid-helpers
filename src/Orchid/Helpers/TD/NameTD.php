@@ -12,6 +12,6 @@ class NameTD
     {
         return TD::make('name', $name)
             ->sort()
-            ->filter(TD::FILTER_TEXT);
+            ->filter();
     }
 }

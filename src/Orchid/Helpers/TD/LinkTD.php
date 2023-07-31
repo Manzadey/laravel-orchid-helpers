@@ -13,17 +13,19 @@ class LinkTD
     public static function make(string $name, string $title = null) : TD
     {
         return TD::make($name, $title)
-            ->render(static function(Repository $repository) use ($name) : ?Link {
-                $href = $repository->get($name);
+            ->render(
+                static function(Repository $repository) use ($name) : ?Link {
+                    $href = $repository->get($name);
 
-                if($href === null) {
-                    return null;
+                    if($href === null) {
+                        return null;
+                    }
+
+                    return Link::make($repository->get($name))
+                        ->target('_blank')
+                        ->icon('link')
+                        ->href($repository->get($name));
                 }
-
-                return Link::make($repository->get($name))
-                    ->target('_blank')
-                    ->icon('link')
-                    ->href($repository->get($name));
-            });
+            );
     }
 }

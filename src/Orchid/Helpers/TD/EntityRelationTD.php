@@ -13,6 +13,10 @@ class EntityRelationTD
     {
         return TD::make($relation, $title)
             ->width('300px')
-            ->render(static fn($model) : ?Persona => data_get($model, $relation) ? new Persona(data_get($model, $relation)?->presenter()) : null);
+            ->render(
+                static fn($model) : ?Persona => data_get($model, $relation) ?
+                    new Persona(data_get($model, $relation)?->presenter()) :
+                    null
+            );
     }
 }

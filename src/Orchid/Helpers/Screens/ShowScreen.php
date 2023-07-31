@@ -6,7 +6,7 @@ namespace Manzadey\LaravelOrchidHelpers\Orchid\Helpers\Screens;
 
 use Illuminate\Database\Eloquent\Model;
 
-abstract class ModelScreen extends AbstractScreen
+abstract class ShowScreen extends AbstractScreen
 {
     protected Model $model;
 
