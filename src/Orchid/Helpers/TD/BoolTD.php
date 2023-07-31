@@ -15,7 +15,7 @@ class BoolTD
     public static function make(string $name, string $title = null) : TD
     {
         return TD::make($name, $title ?? attrName($name))
-            ->width('66px')
+            ->width('2em')
             ->alignCenter()
             ->sort()
             ->render(static fn(Repository|Model $target) => self::render([
