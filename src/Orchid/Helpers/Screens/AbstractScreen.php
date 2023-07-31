@@ -18,7 +18,7 @@ abstract class AbstractScreen extends BaseScreen
      */
     public function name() : ?string
     {
-        return Breadcrumbs::current()->last()->title();
+        return Breadcrumbs::current()->last()?->title();
     }
 
     /**
