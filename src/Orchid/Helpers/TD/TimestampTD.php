@@ -13,7 +13,7 @@ class TimestampTD
 {
     public static function make(string $name, string $title = null) : TD
     {
-        return TD::make($name, $title)
+        return TD::make($name, $title ?? attrName($name))
             ->sort()
             ->render(
                 static fn(Repository|Model $target) => ($item = data_get($target, $name)) instanceof Carbon ?
